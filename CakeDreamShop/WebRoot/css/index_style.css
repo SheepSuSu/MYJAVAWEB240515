@@ -1,0 +1,239 @@
+body{
+    min-width: 550px;
+    background: linear-gradient(to bottom,papayawhip, #d6fff8);
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+@media screen and (max-width: 1250px){
+    #Film_section{
+        overflow: scroll;
+    }
+}
+
+#header,#footer{
+    float: left;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+#header{
+    margin-bottom: 10px;
+}
+#header_bg{
+    float: left;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(to bottom,#fff7e8, #d6fff8);
+    width: calc(100% - 350px); /* 100%减去左右偏移的值 */
+    height: auto;
+    margin-left: 200px; /* 距离页面左边 200px */
+    margin-right: 150px; /* 距离页面右边 150px */
+    margin-bottom: 20px;
+}
+#header_bg>h1{
+    margin-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 2vw;
+    font-weight: bold;
+    color: dodgerblue;
+}
+#header_bg img{
+    max-width: 65%;
+    height: auto;
+    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    box-shadow: 10px -10px 15px rgba(255, 250, 201, 0.82);
+}
+
+
+#container{
+    padding-left: 200px;
+    padding-right: 150px;
+    margin-top: 30px;
+}
+#container .column{
+    float:left;
+    text-align: center;
+    height: 2300px;
+}
+
+
+#center{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: rgba(255,255,255,0.5);
+}
+
+.sale_section{
+    display: flex;
+    flex-direction: column;
+}
+#center h2{
+    padding: 10px 1%;
+    font-size: 1.7vw;
+    font-weight: bold;
+    color: dodgerblue;
+    text-align: left;
+}
+
+.Pic_Words1{
+    width: 100%;
+    margin-bottom: 20px;
+    align-self: center;
+    display: flex;
+    float: left;
+}
+.Pic1{
+    margin-left: 1em;
+    margin-right: 1em;
+    padding: 1em 1em;
+    min-height: 10em;
+    min-width: 10em;
+    /*min-width: 30%;
+    max-width: 40%;*/
+    height: auto;
+}
+.p1{
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 70%;
+    margin: 0 0;
+    height: auto;
+    font-size:15px;
+    font-family:sans-serif;
+    font-style: italic;
+    text-align: left;
+}
+
+
+.Pic_Words2{
+    margin: 20px 0;
+    width: 100%;
+    min-height: 250px;
+    align-self: center;
+    display: flex;
+    float: left;
+    overflow: hidden;
+}
+.Pic2{
+    min-width: 40%;
+    max-width: 50%;
+}
+.p2{
+    padding: 15px 3%;
+    width: 50%;
+    margin: 0 0;
+    font-size:15px;
+    font-family:sans-serif;
+    font-style: italic;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+#Author_section{
+    min-height: 10em;
+    background: linear-gradient(to bottom, #d6fff8 5%,rgba(255, 250, 201, 0.82) 70%);
+}
+#author_pic{
+    background: url("../images/author.png") no-repeat center center;
+    background-size: contain;
+}
+
+#Cake1_pic{
+    background: url("../CakeImage/pic01.jpg") no-repeat center center;
+    background-size: contain;
+}
+#Cake2_pic{
+    background: url("../CakeImage/pic02.jpg") no-repeat center center;
+    background-size: contain;
+}
+#Cake3_pic{
+    background: url("../CakeImage/pic03.jpg") no-repeat center center;
+    background-size: contain;
+}
+#Cake4_pic{
+    background: url("../CakeImage/pic04.jpg") no-repeat center center;
+    background-size: contain;
+}
+#Cake5_pic{
+    background: url("../CakeImage/pic05.jpg") no-repeat center center;
+    background-size: contain;
+}
+#Cake6_pic{
+    background: url("../CakeImage/pic06.jpg") no-repeat center center;
+    background-size: contain;
+}
+
+#left{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    margin-left: -100%;
+    position:relative;
+    right: 200px;
+}
+h3{
+    line-height: 50px;
+    font-weight: bold;
+    color: #fbb6ff;
+}
+#left_navigation li{
+    line-height: 40px;
+    list-style-type: disc;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+
+#right{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    margin-right: -150px;
+}
+#right_navigation li{
+    line-height: 40px;
+    list-style-type: disc;
+    font-style: italic;
+    font-weight: bold;
+    color: black;
+}
+
+#footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ending_words{
+    color: lightyellow;
+    font-style: italic;
+}
+
+.product {
+    width: calc(33.33% - 10px); /* 每行显示4个商品，减去margin-right的宽度 */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column; /* 商品图片和名称垂直排列 */
+    align-items: center; /* 水平对齐居中 */
+    justify-content: flex-start; /* 垂直对齐顶部，商品图片在上方 */
+}
+.img-name {
+    display: flex;
+    flex-direction: column; /* 商品图片和名称垂直排列 */
+    align-items: center; /* 水平对齐居中 */
+}
+.pname {
+    margin-top: 5px; /* 商品名称与图片之间的垂直间距 */
+    text-align: center;
+}

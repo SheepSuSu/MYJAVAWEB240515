@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="MyCakeDreamShop_war_exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/MyCakeDreamShop_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="MyCakeDreamShop" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.mysql:mysql-connector-j:8.2.0" />
+          <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.21.9" />
+          <element id="library" level="project" name="Maven: javax.mvc:javax.mvc-api:1.0.0" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="MyCakeDreamShop/web/Web" />
+    </root>
+  </artifact>
+</component>
